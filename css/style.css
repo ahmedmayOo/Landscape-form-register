@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #333;
+    line-height: 1.7;
+    text-rendering: optimizeLegibility;
+    background: dodgerblue;
+    font-weight: 300;
+    overflow: hidden;
+} 
+ 
+
+.landscape {
+    width: 100%;
+    height: 100vh;
+    background: #333 url('/img/febiyan-L9Ca_JlYnzI-unsplash.jpg')
+    no-repeat center center/cover;
+  
+}
+
+h1 {
+    color: #fff;
+    font-size: 5rem;
+}
+
+
+figure {
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50% , 50%);
+    backface-visibility: hidden;
+    animation-name: drop;
+    animation-duration: 2s; 
+    animation-delay: 1s;
+     
+} 
+
+.form {
+    background: dodgerblue;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 8px; 
+    width: 50vw;
+     
+}
+
+.form:after {
+    content: '';
+    position: absolute;
+    width: 102%; 
+    height: 10%;
+    left: -1%;
+    bottom: -1.5%;
+    right: -1%;
+    background: white;
+    z-index: -1;
+    border-radius: 0 0  15px 15px;
+    box-shadow: 1px 1px 5px 0 #fff;
+}
+
+ 
+.form-group {
+    margin: 1rem 0;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-top: -10px;
+}
+
+fieldset {
+    border: white 2px solid;
+    border-radius: 8px;
+}
+
+legend {
+    margin: 0 1rem;
+    padding: 0 1rem 0 0.30rem;
+    color: #ddd;
+}
+
+input[type="submit"] {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 400;
+    cursor: pointer;
+    margin-top: 2rem; 
+}
+input[type="submit"]:hover {
+    background: rgb(240, 240, 240);
+    
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.social-media i {
+    margin: 0 1.5rem;
+    color: #fff;
+    display: block;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: all 0.6s;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+
+.social-media i:hover {
+    transform: scale(1.2);
+}
+
+@keyframes drop {
+    0% {
+        bottom: -100%;
+    }
+
+    100% {
+        bottom: 50%;
+    }
+
+}
