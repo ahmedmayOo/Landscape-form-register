@@ -17,32 +17,32 @@
                 <form action="#">
                     <div class="form-group">
                         <fieldset>
-                            <legend>User Name :</legend>
-                            <input type="text" name="user-name" id="name">
+                            <input onfocus="legend(this)" onkeyup="legendout(this)" type="text" name="user-name" id="user-name" placeholder="" >
+                            <div class="legend">User Name</div> 
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>  
+                            <input onfocus="legend(this)" onkeyup="legendout(this)" type="text" name="name" id="name" placeholder="">
+                            <div class="legend">Name</div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset>   
+                            <input onfocus="legend(this)" onkeyup="legendout(this)" type="email" name="email" id="email" placeholder="">
+                            <div class="legend">E-mail</div>
+                        </fieldset>
+                    </div>
+                    <div class="form-group">
+                        <fieldset> 
+                            <input onfocus="legend(this)" onkeyup="legendout(this)" type="Password" name="Password" id="Password" placeholder="">
+                            <div class="legend">Password</div>
                         </fieldset>
                     </div>
                     <div class="form-group">
                         <fieldset>
-                            <legend>Name :</legend>
-                            <input type="text" name="name" id="name">
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <fieldset>
-                            <legend>E-mail :</legend>
-                            <input type="email" name="email" id="email">
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <fieldset>
-                            <legend>Password :</legend>
-                            <input type="Password" name="Password" id="Password">
-                        </fieldset>
-                    </div>
-                    <div class="form-group">
-                        <fieldset>
-                            <legend>Re-Password :</legend>
-                            <input type="Password" name="Re-Password" id="re-password">
+                            <input onfocus="legend(this)" onkeyup="legendout(this)" type="Password" name="Re-Password" id="re-password" placeholder="">
+                            <div class="legend">Re-Password</div>
                         </fieldset>
                     </div>
                     <input type="submit" value="Register">
@@ -57,5 +57,14 @@
 
         
     </header>
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+<!--
+    <legend>User Name :</legend>
+    <legend>Name :</legend>
+    <legend>E-mail :</legend>
+    <legend>Password :</legend>
+    <legend>Re-Password :</legend>
+-->
